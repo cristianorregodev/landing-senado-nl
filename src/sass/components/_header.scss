@@ -1,0 +1,98 @@
+.header__main {
+    display: flex;
+    position: fixed;
+    background-color: $rojo;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+
+    @include tablet {
+        flex-direction: row;
+    }
+
+    @include tabletinvert{
+        .menu__responsive{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
+    .menu__responsive{
+        @include tabletinvert{
+            border-bottom: 1px solid $blanco;
+        }
+    }
+
+    .burguer{
+        button{
+            background-color: transparent;
+            border: none;
+            padding-right: 2rem;
+            @include tablet{
+                display: none;
+            }
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
+
+    .header__logo {
+        margin: 0 auto;
+        img{
+            width: clamp(14rem, 70%, 15rem);
+        }
+    }
+
+    .header__nav {
+
+        flex-grow: 1;
+        width: 100%;
+
+        .navbar__container {
+            display: flex;
+            flex-direction: column;
+
+            @include tablet {
+                flex-direction: row;
+            }
+
+            a {
+                padding: 18px 1rem;
+                color: $blanco;
+                flex-grow: 1;
+                text-align: center;
+                &:hover {
+                    background-color: darken($color: $rojo, $amount: 10);
+                }
+                @include tabletinvert{
+                    border-bottom: 1px solid $blanco;
+                }
+            }
+        }
+    }
+
+    .display_none{
+        @include tabletinvert{
+            display: none !important;
+        }
+    }
+
+    .header__redes {
+        padding: 15px 1rem;
+        text-align: center;
+        min-width: 15rem;
+
+        @include tablet {
+            border-left: 2px solid $blanco;
+        }
+
+        a {
+            margin: 0 5px;
+        }
+    }
+}

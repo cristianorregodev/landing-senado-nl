@@ -1,0 +1,56 @@
+.calendar__main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h4 {
+        padding-bottom: 0.5rem;
+        font-size: 3rem;
+        color: $negro;
+        border-bottom: 2px solid $rojo;
+    }
+
+    .calendar__content {
+        @include tablet {
+            display: flex;
+            gap: 4rem;
+        }
+
+        .calendar__cal {
+            background-color: $rojo;
+            border-radius: 1rem;
+            box-shadow: 8px 0px 13px 0px rgba(130, 0, 0, 0.75);
+            img {
+                padding: 7rem 1rem 5rem 2rem;
+            }
+        }
+
+        .calendar__list {
+            padding: 0 2rem;
+
+            @include tablet {
+                border-radius: 1rem;
+                box-shadow: 10px 0px 13px -1px rgba(130, 0, 0, 0.75);
+            }
+
+            h5 {
+                font-size: 2.7rem;
+                color: $rojo;
+                text-align: center;
+            }
+
+            ul {
+                li {
+                    font-size: 2rem;
+                    color: $rojo;
+
+                    p {
+                        font-size: 1.7rem;
+                        color: $negro;
+                        max-width: 30rem;
+                    }
+                }
+            }
+        }
+    }
+}

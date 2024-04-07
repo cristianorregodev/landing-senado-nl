@@ -1,0 +1,25 @@
+//glider
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.core";
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.theme";
+// base
+@import 'base/nomalize';
+@import 'base/variables';
+@import 'base/mixins';
+@import 'base/globales';
+@import 'base/utilidades';
+
+//components
+@import 'components/header';
+@import 'components/bannner';
+@import 'components/acciones';
+@import 'components/galan';
+@import 'components/propuestas';
+@import 'components/equipo';
+@import 'components/calendar';
+@import 'components/suscriBlog';
+@import 'components/footer';
+
+//Propuestas
+@import 'components/propuestas/hero.scss';
+@import 'components/propuestas/formulario.scss';
+@import 'components/propuestas/propuestas.scss';

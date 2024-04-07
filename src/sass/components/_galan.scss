@@ -1,0 +1,61 @@
+.galan__main{
+    background-image: url('/img/bannergalan.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    column-gap: 4rem;
+
+    @include tabletinvert{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .galan__img{
+        margin: 3rem 0;
+
+        @include tabletinvert{
+            order: 1;
+        }
+
+        img{
+            background-color: $blanco;
+            padding: 4rem 7rem 0 0;
+            border-radius: 0 4rem 4rem 0;
+            min-width: 30rem;
+        }
+    }
+
+    .galan__text{
+        padding: 3rem 2rem;
+        margin: 0 auto;
+        max-width: 120rem;
+
+        h2{
+            color: $rojo;
+            text-shadow: 0px 0px 3px rgba(0,0,0,0.81);
+            font-size: 2.8rem;
+            margin-bottom: 3rem;
+        }
+
+        h3{
+            padding-bottom: 1rem;
+            font-size: 3.4rem;
+            text-shadow: 0px 0px 3px rgba(0,0,0,0.81);
+            @include tablet{
+                margin-bottom: 10rem;
+                font-size: 5rem;
+            }
+            text-align: center;
+            border-bottom: 2px solid $rojo;
+        }
+
+        p{
+            color: $blanco;
+            text-shadow: 0px 0px 5px rgba(0,0,0,0.87);
+            text-align: end;
+        }
+    }
+}

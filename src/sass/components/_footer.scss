@@ -1,0 +1,78 @@
+.footer__main{
+    background-color: #292929;
+
+    .footer__content{
+        width: 100%;
+        max-width: 120rem;
+        margin: 0 auto;
+
+        @include tablet{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+        }
+
+        section{
+            margin: 1rem 2rem;
+            padding: 2rem 1rem;
+
+            h4{
+                color: $blanco;
+                font-size: 2.7rem;
+                border-bottom: 2px solid $rojo;
+            }
+
+        }
+
+        .footer__navegation{
+
+            .navbar{
+                .navbar__container{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1rem;
+
+                    a{
+                        color: $blanco;
+
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+
+
+        .footer__redes{
+            .footer__redes-content{
+                display: flex;
+                flex-direction: column;
+                a{
+                    color: $blanco;
+                    display: flex;
+                    margin: 1rem 0;
+                    align-items: center;
+                    gap: 1rem;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+
+    p{
+        color: $blanco;
+        font-size: 1.8rem;
+        width: 100%;
+        max-width: 40rem;
+        margin: 0 auto;
+        text-align: center;
+        padding: 2rem 0;
+
+        a{
+            color: $rojo;
+            margin-right: 1rem;
+        }
+    }
+}

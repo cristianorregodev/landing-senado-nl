@@ -1,0 +1,20 @@
+.banner__main{
+    min-height: 100vh;
+    background-image: url('/img/banner.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top left;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    border-bottom: 7px solid $rojo;
+
+    h1{
+        margin: 0 2rem 2rem 1rem;
+        @include tablet{
+            margin: 0 5rem 5rem 1rem;
+        }
+        border-bottom: 3px solid $rojo;
+    }
+}

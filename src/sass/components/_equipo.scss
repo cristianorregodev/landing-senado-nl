@@ -1,0 +1,77 @@
+.equipo__main{
+    background-color: $blanco2;
+    @include tablet{
+        margin-top: 20rem;
+    }
+
+    h4{
+        padding-top: 3rem;
+        color: $negro;
+        padding-bottom: 1rem;
+        margin: 1rem;
+        font-size: 4rem;
+        border-bottom: 2px solid $rojo;
+    }
+
+    .glide{
+        margin: 1rem 1rem 0 1rem;
+    }
+
+    .equipo__item{
+        display: flex;
+        max-width: 90%;
+        gap: 6rem;
+        @include tabletinvert{
+            flex-direction: column;
+        }
+
+        article{
+            @include tabletinvert{
+                order: 1;
+            }
+            max-width: 45rem;
+            background-color: $blanco;
+            box-shadow: 0px 0px 13px 1px rgba(0,0,0,0.75);
+            margin: 1rem;
+            border-radius: 2rem;
+            overflow: hidden;
+            h3{
+                color: $blanco;
+                font-size: 2.5rem;
+                text-align: center;
+                padding: 1.5rem;
+                background-color: $rojo;
+
+            }
+            p{
+                font-size: 1.8rem;
+                color: $negro;
+                padding: .2rem 1.7rem ;
+                margin: 13px 0;
+            }
+        }
+    }
+
+    .points{
+        margin-bottom: 4rem;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items:center;
+        justify-content: center;
+        gap: 1rem;
+        padding-bottom: 3rem;
+
+        button{
+            border: none;
+            padding: .9rem;
+            border-radius: 50%;
+            background-color: $blanco;
+            box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.75);
+        }
+    }
+    .glide__bullet--active{
+        background-color: $rojo !important;
+    }
+}
+

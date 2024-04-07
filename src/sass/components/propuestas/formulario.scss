@@ -1,0 +1,78 @@
+.formulario__container{
+    background-color: #f5f5f5;
+    height: 100vh;
+    width: 100%;
+    margin-top: 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+    .formulario{
+        width: 80vw;
+        min-height: 80vh;
+        border-radius: 1rem;
+        border: solid 1px #f0dcdb;
+        box-shadow: 0px 2px 5px -2px rgba(196, 93, 93, 0.7);
+        border-top: solid 35px $rojo;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+    }
+    @media(max-width: 930px){
+        .formulario{
+            width: 90vw;
+            min-height: 70vh;
+        }
+    }
+    @media(max-width: 468px){
+        .formulario{
+            width: 100vw;
+            min-height: 70vh;
+        }
+    }
+    .formulario__title{
+        color: $negro;
+        font-size: 4rem;
+        font-weight: $bold;
+        text-align: center;
+        margin: 2rem auto;
+    }
+
+    @media (max-width: 930px){
+        .formulario__title{
+            font-size: 3rem;
+        }
+    }
+
+
+
+    textarea{
+        width: 90%;
+        height: 70%;
+        resize: none;
+        border: solid 1px $rojo;
+    }
+
+    .formulario__enviar{
+        width: 150px;
+        padding: 10px 10px;
+        border-radius: .8rem;
+        background-color: $rojo;
+        color: $blanco;
+        border: none;
+        font-size: 1.5rem;
+        font-weight: $delgada;
+        margin: 2rem auto;
+        cursor: pointer;
+    }
+
+    .formulario__enviar:hover{
+        background-color: darken($color: $rojo, $amount: 10);
+    }
+
+
+}
